@@ -447,3 +447,86 @@ footer {
 .hero-content {
     animation: fadeInUp 1s ease-out;
 }
+
+/* ========== NOTIFICACIONES ========== */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 9999;
+    max-width: 350px;
+    animation: slideInRight 0.3s ease-out;
+}
+
+.notification-success {
+    border-left: 4px solid #27ae60;
+}
+
+.notification-success i {
+    color: #27ae60;
+}
+
+.notification-error {
+    border-left: 4px solid var(--accent-color);
+}
+
+.notification-error i {
+    color: var(--accent-color);
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========== ANIMACIONES DE SCROLL ========== */
+.service-item,
+.gallery-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service-item.animate-in,
+.gallery-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== NAVEGACIÓN ACTIVA ========== */
+.nav-menu a.active {
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.nav-menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--secondary-color);
+}
