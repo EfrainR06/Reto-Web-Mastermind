@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PixelLove Studios - Fotografía Profesional</title>
+
+        <!--- Fuentes de Google -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!--- FontAwesome Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!--- Estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!---- HEADER Y NAVEGACIÓN-->
+        <header>
+            <nav>
+                <div class="logo">
+                    <i class="fas-fa-camara"></i> PixelLove Studios
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!---- SECCIÓN HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Capturamos tus momentos más especiales</h1>
+                <p>Somos especialistas en fotografía profesional para bodas, eventos corporativos y sesiones personales. Transformamos tus recuerdos en obras de arte que durarán para siempre.</p>
+                <a href="#contacto" class="btn-primary">¡Contáctanos ahora!</a>
+            </div>
+        </section>
+
+        <!---- SECCIÓN SERVICIOS -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3>Bodas</h3>
+                        <p>Capturamos cada momento de tu gran día con un enfoque artístico y profesional.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Ofrecemos cobertura fotográfica para conferencias, lanzamientos y eventos de empresa.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Sesiones Personales</h3>
+                        <p>Realizamos sesiones de fotos personalizadas para retratos, familias y más.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---- SECCIÓN GALERÍA ---->
+        <section id="galeria" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Nuestra Galería</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./images/foto-pettine-IfjHaIoAoqE-unsplash.jpg" alt="Fotografia de boda1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/eventparty.jpg" alt="Evento corporativo">
+                    </div>
+                    <div class ="gallery-item">
+                        <img src="./images/Photo-professional.jpg" alt="Sesion personal">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/Fotografia-Familiar.jpg" alt="Fotografía familiar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---- SECCIÓN VIDEO -->
+        <section id="video" class="video-section">
+            <div class="container">
+                <h2 class="section-title">Conoce nuestro trabajo</h2>
+                <div class="video-container">
+                    <video controls poster="./images/Videoportada.jpg">
+                        <source src="./media/intro_mastermind.mp4" type="video/mp4">
+                        <source src="./media/intro_mastermindv2.webm" type="video/webm">
+                        Tu navegador no soporta la reproducción de videos HTML5.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!---- SECCIÓN CONTACTO -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contacto-info">
+                        <h3> ¡Hablemos de tu proyecto!</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San José, Costa Rica</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+506 1234 5678</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@pixellovestudios.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas-fa-clock"></i>
+                    <span>Lunes a Viernes: 9:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class ="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio de interés</label>
+                        <select id="servicio" name="servicio">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="boda">Fotografía de Bodas</option>
+                            <option value="corporativo">Eventos Corporativos</option>
+                            <option value="personal">Sesiones Personales</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-camera"></i> PixelLove Studios
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PixelLove Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
